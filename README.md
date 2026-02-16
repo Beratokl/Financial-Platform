@@ -106,55 +106,49 @@ start-all.bat
 ./start-all.sh
 ```
 
-3. **Access the platform**
-- Dashboard: Open `frontend-dashboard.html`
-- API Docs: http://localhost:8001/docs (Accounts)
-- API Docs: http://localhost:8002/docs (Payments)
-- API Docs: http://localhost:8003/docs (Ledger)
-- API Docs: http://localhost:8004/docs (Users)
 
-### Load Sample Data
+ Load Sample Data
 ```bash
 python populate-sample-data.py
 ```
 
-## 🔧 API Endpoints
+ API Endpoints
 
-### User Service (Port 8004)
+ User Service (Port 8004)
 ```
 POST   /users              Create new user
 GET    /users/{id}         Get user by ID
 GET    /users              List all users
 ```
 
-### Accounts Service (Port 8001)
+ Accounts Service
 ```
 POST   /accounts           Create account
 GET    /accounts/{id}      Get account details
 GET    /accounts/user/{id} Get user accounts
 ```
 
-### Payments Service (Port 8002)
+ Payments Service 
 ```
 POST   /payments           Process payment
 GET    /payments/{id}      Get payment status
 GET    /payments           List payments
 ```
 
-### Ledger Service (Port 8003)
+ Ledger Service 
 ```
 POST   /ledger/entries     Create ledger entry
 GET    /ledger/account/{id} Get account ledger
 ```
 
-## ☁️ AWS Deployment
+ ☁️ AWS Deployment
 
-### Prerequisites
+ Prerequisites
 - AWS CLI configured
 - Terraform installed
 - kubectl installed
 
-### Deploy to AWS EKS
+ Deploy to AWS EKS
 
 ```bash
 # 1. Deploy infrastructure
@@ -172,7 +166,7 @@ kubectl apply -f ../k8s/
 kubectl get services -n fintech
 ```
 
-## 🔐 Security Features
+ 🔐 Security Features
 
 - ✅ JWT-based authentication
 - ✅ Role-based access control (RBAC)
@@ -183,14 +177,14 @@ kubectl get services -n fintech
 - ✅ Security groups and network policies
 - ✅ Audit logging
 
-## 📊 Monitoring & Observability
+ 📊 Monitoring & Observability
 
 - CloudWatch for logs and metrics
 - AWS X-Ray for distributed tracing
 - Health check endpoints on all services
 - Prometheus-compatible metrics
 
-## 🧪 Testing
+🧪 Testing
 
 ```bash
 # Run unit tests
@@ -203,27 +197,21 @@ pytest tests/integration/
 locust -f tests/load/locustfile.py
 ```
 
-## 📈 Performance
+ 📈 Performance
 
 - **Throughput**: 10,000+ requests/second per service
 - **Latency**: <100ms average response time
 - **Scalability**: Horizontal scaling with Kubernetes
 - **Availability**: 99.9% uptime with multi-AZ deployment
 
-## 🤝 Contributing
+ 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+ 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
-
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
 
 ## 🙏 Acknowledgments
 
