@@ -1,4 +1,4 @@
-# 🏦 Financial Platform
+ Financial Platform
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.109+-green.svg)](https://fastapi.tiangolo.com/)
@@ -10,7 +10,7 @@
 
 Scalable financial services platform featuring account management, payment processing, transaction ledger, and secure authentication. Built with modern technologies and designed for enterprise deployment on AWS.
 
-## 🎯 Key Features
+ Key Features
 
 - ✅ **Microservices Architecture** - Independent, scalable services
 - ✅ **RESTful APIs** - OpenAPI/Swagger documentation
@@ -20,16 +20,16 @@ Scalable financial services platform featuring account management, payment proce
 - ✅ **Infrastructure as Code** - Terraform for AWS deployment
 - ✅ **Production-Ready** - Monitoring, logging, security best practices
 
-## 🛠️ Tech Stack
+ Tech Stack
 
-### Backend
+ Backend
 - **Python 3.11+** - Modern, type-safe Python
 - **FastAPI** - High-performance async web framework
 - **SQLAlchemy** - Database ORM
 - **PostgreSQL** - Primary database
 - **Kafka** - Event streaming platform
 
-### Infrastructure
+Infrastructure
 - **Docker** - Containerization
 - **Kubernetes** - Container orchestration
 - **AWS EKS** - Managed Kubernetes service
@@ -37,12 +37,12 @@ Scalable financial services platform featuring account management, payment proce
 - **AWS RDS** - Managed PostgreSQL
 - **AWS MSK** - Managed Kafka
 
-### Security & Identity
+ Security & Identity
 - **Keycloak** - Identity and access management
 - **JWT** - Token-based authentication
 - **AWS Secrets Manager** - Secure credential storage
 
-## 🏗️ Architecture
+ Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -64,7 +64,7 @@ Scalable financial services platform featuring account management, payment proce
             └─────────────────┘
 ```
 
-## 📁 Project Structure
+Project Structure
 
 ```
 financial-platform/
@@ -82,9 +82,9 @@ financial-platform/
 └── README.md
 ```
 
-## 🚀 Quick Start
+ Quick Start
 
-### Prerequisites
+ Prerequisites
 - Python 3.11+
 - Docker Desktop
 - Git
@@ -166,7 +166,7 @@ kubectl apply -f ../k8s/
 kubectl get services -n fintech
 ```
 
- 🔐 Security Features
+  Security Features
 
 - ✅ JWT-based authentication
 - ✅ Role-based access control (RBAC)
@@ -177,14 +177,14 @@ kubectl get services -n fintech
 - ✅ Security groups and network policies
 - ✅ Audit logging
 
- 📊 Monitoring & Observability
+  Monitoring & Observability
 
 - CloudWatch for logs and metrics
 - AWS X-Ray for distributed tracing
 - Health check endpoints on all services
 - Prometheus-compatible metrics
 
-🧪 Testing
+Testing
 
 ```bash
 # Run unit tests
@@ -197,14 +197,14 @@ pytest tests/integration/
 locust -f tests/load/locustfile.py
 ```
 
- 📈 Performance
+  Performance
 
 - **Throughput**: 10,000+ requests/second per service
 - **Latency**: <100ms average response time
 - **Scalability**: Horizontal scaling with Kubernetes
 - **Availability**: 99.9% uptime with multi-AZ deployment
 
- 🤝 Contributing
+  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -213,7 +213,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
-## 🙏 Acknowledgments
+ Acknowledgments
 
 - Apache Fineract for core banking capabilities
 - Moov for payment infrastructure
